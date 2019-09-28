@@ -3,12 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Trans Continental Motor Freight Inc.</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- Custom Css File Script -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/master.css') }}">
   </head>
   <body>
-    <header><center><h1>Trans Continental Motor Freight Inc. </h1></center></header>
+    {% block nav%}
+    {% endblock %}
     {% block body %}
     {% endblock %}
-    <footer><center><h1>Trans Continental Motor Freight Inc. </h1></center></footer>
   </body>
 </html>
